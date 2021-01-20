@@ -9,7 +9,7 @@ on:
 
 jobs:
   test:
-    name: Running Units Tests
+    name: Running install
     runs-on: ubuntu-latest
 
     steps:
@@ -20,5 +20,3 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Install
       run: npm install
-    - name: Test
-      run: npm test
